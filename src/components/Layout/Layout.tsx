@@ -15,8 +15,8 @@ import {
   Search,
   LogOut,
 } from 'lucide-react';
-import { useAuthStore } from '@/store/authStore';
-import { cn } from '@/utils/cn';
+import { useAuthStore } from '../../store/authStore';
+import { cn } from '../../utils/cn';
 
 const Layout: React.FC = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);

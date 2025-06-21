@@ -4,8 +4,8 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { Eye, EyeOff, Brain, ArrowRight } from 'lucide-react';
-import { useAuthStore } from '@/store/authStore';
-import { LoginCredentials } from '@/types';
+import { useAuthStore } from '../../store/authStore';
+import { LoginCredentials } from '../../types';
 
 const Login: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -135,7 +135,6 @@ const Login: React.FC = () => {
               <div className="flex items-center">
                 <input
                   id="remember-me"
-                  name="remember-me"
                   type="checkbox"
                   {...register('rememberMe')}
                   className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"

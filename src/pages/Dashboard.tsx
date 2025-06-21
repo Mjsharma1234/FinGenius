@@ -13,7 +13,7 @@ import {
   Eye,
   Plus,
 } from 'lucide-react';
-import { useAuthStore } from '@/store/authStore';
+import { useAuthStore } from '../store/authStore';
 
 const Dashboard: React.FC = () => {
   const { user } = useAuthStore();

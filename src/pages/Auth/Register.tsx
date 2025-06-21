@@ -4,8 +4,8 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { Eye, EyeOff, Brain, ArrowRight, Check } from 'lucide-react';
-import { useAuthStore } from '@/store/authStore';
-import { RegisterData } from '@/types';
+import { useAuthStore } from '../../store/authStore';
+import { RegisterData } from '../../types';
 
 const Register: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false);
