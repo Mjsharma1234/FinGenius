@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/FinGenius/static/css/main.453ffcc4.css",
+    "main.js": "/FinGenius/static/js/main.4d83c173.js",
+    "index.html": "/FinGenius/index.html",
+    "main.453ffcc4.css.map": "/FinGenius/static/css/main.453ffcc4.css.map",
+    "main.4d83c173.js.map": "/FinGenius/static/js/main.4d83c173.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.453ffcc4.css",
+    "static/js/main.4d83c173.js"
+  ]
+}
