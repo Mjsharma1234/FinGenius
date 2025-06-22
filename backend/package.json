@@ -1,0 +1,79 @@
+{
+  "name": "fingenius-backend",
+  "version": "1.0.0",
+  "description": "AI-Powered Finance Manager Backend",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "build": "echo 'No build step required for Node.js'",
+    "test": "jest",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "docker:build": "docker build -t fingenius-backend .",
+    "docker:run": "docker run -p 3001:3001 fingenius-backend",
+    "deploy:render": "echo 'Deploy to Render.com'",
+    "health": "curl -f http://localhost:3001/health || exit 1"
+  },
+  "keywords": [
+    "finance",
+    "ai",
+    "ml",
+    "crypto",
+    "blockchain",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "FinGenius Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "redis": "^4.6.8",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "express-rate-limit": "^6.10.0",
+    "compression": "^1.7.4",
+    "socket.io": "^4.7.2",
+    "dotenv": "^16.3.1",
+    "joi": "^17.9.2",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.32.5",
+    "nodemailer": "^6.9.4",
+    "twilio": "^4.12.0",
+    "web3": "^4.0.3",
+    "ethers": "^6.7.1",
+    "ccxt": "^4.0.0",
+    "@tensorflow/tfjs-node": "^4.10.0",
+    "natural": "^6.5.0",
+    "sentiment": "^5.0.2",
+    "cron": "^2.4.4",
+    "uuid": "^9.0.0",
+    "moment": "^2.29.4",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.6.2",
+    "supertest": "^6.3.3",
+    "eslint": "^8.47.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/fingenius.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/fingenius/issues"
+  },
+  "homepage": "https://github.com/yourusername/fingenius#readme"
+} 
